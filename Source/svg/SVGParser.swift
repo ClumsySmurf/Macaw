@@ -1666,6 +1666,9 @@ open class SVGParser {
         if string == "none" {
             return 0
         }
+        if string == "null" {
+            return 0
+        }
         guard let matcher = SVGParserRegexHelper.getUnitsIdenitifierMatcher() else {
             return .none
         }
